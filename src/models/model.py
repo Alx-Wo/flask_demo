@@ -44,7 +44,7 @@ class MyModel():
             str: _description_
         """
         prediction = self.predict(model_input)
-        return f"Given {model_input}, I predict: {prediction}"
+        return f"Given <{model_input}>, I predict: {prediction}"
 
     def predict(self, model_input: str) -> str:
         """Make a prediction on an input, using the models parameters
