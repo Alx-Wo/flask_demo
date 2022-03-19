@@ -1,0 +1,10 @@
+name: flask_demo
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - Sphinx
+  - coverage
+  - autopep8
+  - pylint
