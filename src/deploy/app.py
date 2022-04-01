@@ -27,7 +27,7 @@ def predict():
     Returns:
         _type_: _description_
     """
-    data = request.get_json(force=True)
+    data = request.get_json(force=True)  # type: ignore  Pylance cannot resolve the LocalProxy properly
     if data is not None:
         prediction = model.provide_prediction(data["input"])
     else:

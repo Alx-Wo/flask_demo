@@ -1,5 +1,6 @@
-import logging
 import argparse
+import logging
+
 
 def main(input_filepath, output_filepath):
     """ Runs data processing scripts to turn raw data from (../raw) into
@@ -12,7 +13,7 @@ def main(input_filepath, output_filepath):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description = "Run data pre-processing")
+    parser = argparse.ArgumentParser(description="Run data pre-processing")
     parser.add_argument('input_path', type=str, help="input path")
     parser.add_argument('output_path', type=str, help="output path")
     args = parser.parse_args()
