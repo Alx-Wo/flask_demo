@@ -1,11 +1,23 @@
-flask_demo
+Flask Demo
 ==============================
 
-Play around with flask
+Play around with flask.
+Start flask server with
+
+```bash
+python -m src.deploy.app
+```
+
+Send requests with
+
+```bash
+python src/deploy/app_request.py "a string to request prediction on"
+```
 
 Project Organization
 ------------
 
+``` Markdown
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
@@ -54,7 +66,8 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+```
 
---------
+------------
 
 Project based on the [data science cookiecutter](https://drivendata.github.io/cookiecutter-data-science/). #cookiecutterdatascience
